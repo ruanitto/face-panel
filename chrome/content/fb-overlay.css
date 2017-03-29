@@ -1,0 +1,119 @@
+#facebook_panel-toolbar-button {
+  list-style-image: url("chrome://facebook_panel/content/fb-16.png");
+}
+/* Added for Australis support */
+#facebook_panel-toolbar-button[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #facebook_panel-toolbar-button {
+  list-style-image: url("chrome://facebook_panel/content/fb-32.png");
+}
+
+#facebook_panel-panel-iframe {
+  -moz-appearance: none;
+  border: none;
+  margin: 0 -10px -10px -10px;
+  padding: 0;
+}
+
+#facebook_panel-panel-toolbar {
+	-moz-appearance: none;
+  border: none;
+  margin: -10px -10px 0 -10px;
+	padding: 0;
+  background: #5682A3;
+}
+
+.facebook_panel-toolbar-class-show{
+  height: 24px;
+}
+
+.facebook_panel-toolbar-class-hide{
+  height: 2px;
+  transition: height 0.5s ease-out 0s;
+}
+
+.facebook_panel-toolbar-class-hide:hover {
+  height: 24px;
+  transition: height 0.5s ease-out 0s;
+}
+
+.facebook_panel-toolbar-class-hide > .facebook_panel-toolbarbutton-class {
+  visibility: collapse;
+}
+
+#facebook_panel-panel-toolbar:hover .facebook_panel-toolbarbutton-class {
+  visibility: visible;
+}
+
+#facebook_panel-panel-toolbar > toolbarbutton{
+  -moz-appearance: none;
+	border: none;
+	margin: 0;
+	padding: 0px;
+	width: 24px;
+	height: 24px;
+	background: none;
+}
+
+#facebook_panel-toolbarButton_reload {
+  list-style-image: url('chrome://facebook_panel/content/controls.png');
+	-moz-image-region: rect(0px, 240px, 24px, 216px);
+}
+#facebook_panel-toolbarButton_reload:hover {
+	-moz-image-region: rect(0px, 264px, 24px, 240px);
+}
+#facebook_panel-toolbarButton_reload:active {
+	-moz-image-region: rect(0px, 288px, 24px, 264px);
+}
+
+#facebook_panel-toolbarButton_pin {
+  list-style-image: url('chrome://facebook_panel/content/controls.png');
+	-moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+#facebook_panel-toolbarButton_pin:hover {
+	-moz-image-region: rect(0px, 48px, 24px, 24px);
+}
+#facebook_panel-toolbarButton_pin:active {
+	-moz-image-region: rect(0px, 72px, 24px, 48px);
+}
+
+#facebook_panel-toolbarButton_pin[checked] {
+	-moz-image-region: rect(0px, 96px, 24px, 72px);
+}
+#facebook_panel-toolbarButton_pin[checked]:hover {
+	-moz-image-region: rect(0px, 120px, 24px, 96px);
+}
+#facebook_panel-toolbarButton_pin[checked]:active {
+	-moz-image-region: rect(0px, 144px, 24px, 120px);
+}
+
+#facebook_panel-toolbarButton_close {
+  list-style-image: url('chrome://facebook_panel/content/controls.png');
+	-moz-image-region: rect(0px, 168px, 24px, 144px);
+}
+#facebook_panel-toolbarButton_close:hover {
+	-moz-image-region: rect(0px, 192px, 24px, 168px);
+}
+#facebook_panel-toolbarButton_close:active {
+	-moz-image-region: rect(0px, 216px, 24px, 192px);
+}
+
+#facebook_panel-toolbarButton_autoHide {
+  list-style-image: url('chrome://facebook_panel/content/controls.png');
+	-moz-image-region: rect(0px, 384px, 24px, 360px);
+}
+#facebook_panel-toolbarButton_autoHide:hover {
+	-moz-image-region: rect(0px, 408px, 24px, 384px);
+}
+#facebook_panel-toolbarButton_autoHide:active {
+	-moz-image-region: rect(0px, 432px, 24px, 408px);
+}
+
+#facebook_panel-toolbarButton_autoHide[checked] {
+	-moz-image-region: rect(0px, 312px, 24px, 288px);
+}
+#facebook_panel-toolbarButton_autoHide[checked]:hover {
+	-moz-image-region: rect(0px, 336px, 24px, 312px);
+}
+#facebook_panel-toolbarButton_autoHide[checked]:active {
+	-moz-image-region: rect(0px, 360px, 24px, 336px);
+}

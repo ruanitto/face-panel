@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE options SYSTEM "chrome://facebook_panel/locale/options.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <setting  type="integer"
+            pref="extensions.facebook_panel.panelWidth"
+            title="&panelSize.widthTitle;"
+            desc="&panelSize.widthDesc;"
+            min="5"
+            max="100"
+            increment="5"
+            />
+
+  <setting  type="integer"
+            pref="extensions.facebook_panel.panelHeight"
+            title="&panelSize.heightTitle;"
+            desc="&panelSize.heightDesc;"
+            min="5"
+            max="100"
+            increment="5"
+            />
+            
+  <setting  type="integer"
+            pref="extensions.facebook_panel.delayFirstRun"
+            title="&delayFirstRun.title;"
+            desc="&delayFirstRun.desc;"
+            min="0"
+            max="60"
+            />
+  <setting  type="integer"
+            pref="extensions.facebook_panel.faviconRefreshTime"
+            title="&refreshTime.title;"
+            desc="&refreshTime.desc;"
+            min="0"
+            max="1440"
+            />
+
+  <setting type="bool"
+           pref="extensions.facebook_panel.noautohide"
+           title="&facebook_panelToolbar.noautohide.title;"
+           />
+
+  <setting type="bool"
+           pref="extensions.facebook_panel.toolbarAutoHide"
+           title="&facebook_panelToolbar.toolbarAutoHide.title;"
+           />
+
+  <setting  type="menulist"
+            pref="extensions.facebook_panel.modfiers"
+            title="&shortcut.modifiers.title;"
+            desc="&shortcut.modifiers.desc;"
+            >
+    <menulist>
+      <menupopup>
+        <menuitem value="accel" label="Ctrl" />
+        <menuitem value="shift" label="Shift" />
+        <menuitem value="alt" label="Alt" />
+        <menuitem value="accel shift" label="Ctrl+Shift" />
+        <menuitem value="accel alt" label="Ctrl+Alt" />
+        <menuitem value="shift alt" label="Shift+Alt" />
+      </menupopup>
+    </menulist>
+  </setting>
+
+  <setting  type="string"
+            pref="extensions.facebook_panel.key"
+            title="&shortcut.key.title;"
+            desc="&shortcut.key.desc;"
+            />
+
+  <setting  type="control" title="&shortcut.button.title;">
+    <button id="facebook_panel-restart"
+            label="&shortcut.button.label;"
+            oncommand='var boot = Components.classes["@mozilla.org/toolkit/app-startup;1"].getService(Components.interfaces.nsIAppStartup);
+                       boot.quit(Components.interfaces.nsIAppStartup.eForceQuit|Components.interfaces.nsIAppStartup.eRestart);'
+            />
+  </setting>
+
+</vbox>

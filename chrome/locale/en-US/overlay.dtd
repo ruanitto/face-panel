@@ -1,0 +1,6 @@
+<!ENTITY facebook_panelToolbarButton.label    "Facebook Panel">
+<!ENTITY facebook_panelToolbarButton.tooltip  "Facebook Panel">
+<!ENTITY facebook_panelToolbar.reload         "Reload the panel">
+<!ENTITY facebook_panelToolbar.autohide       "Show/Hide the toolbar">
+<!ENTITY facebook_panelToolbar.pin            "Pin/Unpin the panel">
+<!ENTITY facebook_panelToolbar.close          "Close the panel">

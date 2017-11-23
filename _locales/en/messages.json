@@ -1,0 +1,12 @@
+{
+  "extensionName": {
+    "message": "Panel for Facebook™",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Easily access Facebook™ in a separate panel. Facebook™ does not endorse or sponsor this project.",
+    "description": "Description of the extension."
+  }
+
+}
